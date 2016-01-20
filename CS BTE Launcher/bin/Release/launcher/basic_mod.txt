@@ -1,0 +1,19 @@
+Detonation
+
+Terrorist
+1. Destroy the target by planting and successfully detonating the C4.
+2. Eliminate all Counter-Terrorists forces.
+
+Counter-Terrorist
+1. Prevent the destruction of the Target.
+2. Eliminate all Terrorist forces.
+
+Hostage Rescue
+
+Terrorist
+1. Thwart the Counter-Terrorists' attempts to rescue the hostages.
+2. Eliminate all Counter-Terrorists forces.
+
+Counter-Terrorist
+1. Rescue the hostages held captive by the Terrorists.
+2. Eliminate all Terrorist forces.

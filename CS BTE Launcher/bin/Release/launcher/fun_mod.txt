@@ -1,0 +1,1 @@
+Play with Bazooka, adding the hit accuracy to determine the system, combo system, and multiple targets within a scene can be destroyed, so that the fighting is more straightforward, more exciting.

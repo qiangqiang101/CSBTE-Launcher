@@ -1,0 +1,7 @@
+Base on Zombie Mode, when Game started, players will be randomly selected to become the host of the zombie and the host cannot be killed. Zombie can attack humans and infection into a zombie, human efforts will have to flee to escape point, to avoid being infected by zombies.
+
+Human
+Reach escape point within a limited period of time.
+
+Zombie
+Infected all humans, or reach the escape point within time limit to prevent human wining.

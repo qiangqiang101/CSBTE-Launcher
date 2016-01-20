@@ -1,0 +1,5 @@
+Human
+Within a certain period of time, survive or killed all the zombies.
+
+Zombie
+Infected zombie players need to attack all humans to be infected as zombies.

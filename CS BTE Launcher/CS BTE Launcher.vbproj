@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A63952C0-DC3E-40FF-9995-A087656FBA11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CS_BTE_Launcher.My.MyApplication</StartupObject>
+    <RootNamespace>CS_BTE_Launcher</RootNamespace>
+    <AssemblyName>BTELauncher</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BTELauncher.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BTELauncher.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>cstrike.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Design, Version=11.2.0.1, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DotNetBar for Windows Forms\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DotNetBar for Windows Forms\DevComponents.DotNetBar.Keyboard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DotNetBar for Windows Forms\DevComponents.DotNetBar.Schedule.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DotNetBar for Windows Forms\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=11.2.0.1, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DotNetBar for Windows Forms\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation.Design, Version=11.2.0.1, Culture=neutral, PublicKeyToken=30cefae8f341f577, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DotNetBar for Windows Forms\DevComponents.Instrumentation.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.SuperGrid.Design, Version=11.2.0.1, Culture=neutral, PublicKeyToken=1fea3f5d8d482bff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DotNetBar for Windows Forms\DevComponents.SuperGrid.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.TreeGX, Version=11.2.0.1, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\DotNetBar for Windows Forms\DevComponents.TreeGX.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BitDefender Theme.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BTEFormatReader.vb" />
+    <Compile Include="CFGRead.vb" />
+    <Compile Include="frmBackground2.Designer.vb">
+      <DependentUpon>frmBackground2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackground2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCangku.Designer.vb">
+      <DependentUpon>frmCangku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCangku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHLDS.Designer.vb">
+      <DependentUpon>frmHLDS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHLDS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJoin.Designer.vb">
+      <DependentUpon>frmJoin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmJoin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLauncher.Designer.vb">
+      <DependentUpon>frmLauncher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLauncher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMode.Designer.vb">
+      <DependentUpon>frmMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMsgbox.Designer.vb">
+      <DependentUpon>frmMsgbox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMsgbox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOption.Designer.vb">
+      <DependentUpon>frmOption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlayer.Designer.vb">
+      <DependentUpon>frmPlayer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlayer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuickBuy.Designer.vb">
+      <DependentUpon>frmQuickBuy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuickBuy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTeamSuit.Designer.vb">
+      <DependentUpon>frmTeamSuit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTeamSuit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWeapon.Designer.vb">
+      <DependentUpon>frmWeapon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWeapon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INIreadvb.vb" />
+    <Compile Include="INIwritevb.vb" />
+    <Compile Include="INIwritevb2.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmBackground2.resx">
+      <DependentUpon>frmBackground2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCangku.resx">
+      <DependentUpon>frmCangku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHLDS.resx">
+      <DependentUpon>frmHLDS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJoin.resx">
+      <DependentUpon>frmJoin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLauncher.resx">
+      <DependentUpon>frmLauncher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMode.resx">
+      <DependentUpon>frmMode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMsgbox.resx">
+      <DependentUpon>frmMsgbox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOption.resx">
+      <DependentUpon>frmOption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlayer.resx">
+      <DependentUpon>frmPlayer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuickBuy.resx">
+      <DependentUpon>frmQuickBuy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTeamSuit.resx">
+      <DependentUpon>frmTeamSuit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWeapon.resx">
+      <DependentUpon>frmWeapon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_pic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_anniversary_of_the_painting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\All_about_lovin_%27you_paint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Army_rank_spray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bandspray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basic_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basic_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Battalion_rank_spray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brigade_rank_spray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Choijiyoon_spray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Corps_rank_spray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crissspray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ctspray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dm_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dm_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dr_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dr_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EricaSpray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fun_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fun_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gdm_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gdm_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gongmospray01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gongmospray02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gongmospray03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gongmospray07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gongmospray08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gongmospray09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gongmospray10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Host_regular_zombie_spray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jenniferspray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ladderspray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Love_the_debris_painting_%28left%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Love_the_debris_painting_%28right%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MeiSpray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Natashaspray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Newyearspray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nndm_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nndm_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No_photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\none_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\none_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pczombi_spray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Platoon_rank_spray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ritsuka_spray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skull_rabbit_painting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skullspray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sl8gold_spray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sniper_king_painting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\td_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\td_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trspray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Valentines_section_painting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Watergun_spray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wc13spray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wcg12spray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xmas_spray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xmasspray09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yurispray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zb1_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zb1_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zb3_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zb3_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zb4_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zb4_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ze_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ze_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cannotuse.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\launcher\mapimg\random_cso.png" />
+    <Content Include="cstrike.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

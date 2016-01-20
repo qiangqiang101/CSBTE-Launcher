@@ -1,0 +1,5 @@
+Human
+Reserve ammunition supply have been doubled. However, the cap is 200 rounds except some special weapons. In the next round, the weapons has been reset and the player must buy new weapons. The maximum health point limit for human is boosted to 1000. The human can only wear Kevlar vest instead of Helmet. The humans are unable to rebuy and money does not play a role in this mode although there is money.
+
+Zombie
+Zombies can only infect humans with melee attacks, Zombies have greater health points depending on the number of players, movement speed and jumping height. It takes greater damage from shotgun and sniper rifle shots, melee attacks and explosive grenades.

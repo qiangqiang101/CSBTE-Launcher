@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="BGP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">On</Value>
+    </Setting>
+    <Setting Name="Spray" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CSO</Value>
+    </Setting>
+    <Setting Name="IP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.0.100</Value>
+    </Setting>
+    <Setting Name="Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">27015</Value>
+    </Setting>
+    <Setting Name="HLDS_IP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="HLDS_Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">27015</Value>
+    </Setting>
+    <Setting Name="HLDS_MaxPlayer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">32</Value>
+    </Setting>
+    <Setting Name="HLDS_Map" Type="System.String" Scope="User">
+      <Value Profile="(Default)">de_dust2</Value>
+    </Setting>
+    <Setting Name="HLDS_Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CSBTE</Value>
+    </Setting>
+    <Setting Name="BGM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">On</Value>
+    </Setting>
+    <Setting Name="Bot_Enable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Enable</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

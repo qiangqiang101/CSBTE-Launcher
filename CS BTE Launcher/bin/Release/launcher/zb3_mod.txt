@@ -1,0 +1,5 @@
+Human
+Humans now have Hero and Heroine. Both of them use powerful exclusive weapons. The humans can now upgrade their attack power by killing zombies. Once a zombie is killed, the attack damage is increased by 10% (Peak is 200%, 230% for Combat Master item user). Increment applies to all survivors.
+
+Zombie
+The zombies can revive themselves after 5 seconds of their death unless a died due to headshot. However, when revived, their HP decreases by half and their Kevalar is 0. The zombies can increase their health power gradually by receiving damages from human. When the Anger Bar reaches its maximum, the zombie will evolve. The maximum health and Kevlar will increased greatly. Note that the anger bar can be increased dramatically if the zombie infects a human especially Andre or Kate. Normal zombies can also use skills like its host but weaker and executes for a shorter time.

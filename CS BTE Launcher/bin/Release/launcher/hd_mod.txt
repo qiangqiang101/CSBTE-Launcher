@@ -1,0 +1,1 @@
+Team-based battle mode, after the start of the game, players will be randomly selected to transform into a ghost, the rest of the rest of the players can get through the cumulative Kills the ghost, the ghost kill each successful players will be 5 seconds later transformed into a ghost.
